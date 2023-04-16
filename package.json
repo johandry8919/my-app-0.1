@@ -1,5 +1,5 @@
 {
-  "homepage": "https://github.com/johandry8919/my-app-0.1/",
+  "homepage": "https://johandry8919.github.io/my-app-0.1/",
   "name": "my-app-0.1",
   "private": true,
   "version": "0.0.0",
@@ -9,7 +9,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "animate.css": "^4.1.1",
