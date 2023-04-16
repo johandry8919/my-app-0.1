@@ -1,4 +1,4 @@
-import fondo from '../../assets/img/vedeis.mp4'
+import anime from '../../assets/img/anime.gif'
 
 function Footter() {
 
@@ -22,14 +22,7 @@ function Footter() {
 
         <div class="footer">
 
-            <div style={styles}>
-                <iframe loading="lazy" style={{ position: 'absolute', width: '100%', height: '100%', top: 0, left: 0, border: 'none', padding: 0, margin: 0 }}
-                src={decodeURIComponent(srcUrl)} allowFullScreen={true} allow="fullscreen" autoplay>
-                </iframe>
-            </div>
-                    
-
-            <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFgORdFfP8&#x2F;watch?utm_content=DAFgORdFfP8&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">programador full starck</a> de johandry
+           <img className='img-fluid' src={anime} alt="img-fotter" />
 
         
               

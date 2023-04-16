@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
 import Footter from './layout/Footter';
-import logo1 from '../assets/img/fond.png';
-import logo2 from '../assets/img/logo2.png';
-import logo3 from '../assets/img/El movidas.png';
-
+import logo1 from '../assets/img/programador.gif';
+import logo2 from '../assets/img/programador2.gif';
+import logo3 from '../assets/img/programador 3.gif';
 import ReCAPTCHA from 'react-google-recaptcha';
+
 
 
 
@@ -85,7 +85,7 @@ function Home() {
                 Mensaje enviado correctamente.
                 </div>
       <section className='card container text-uppercase'>
-        <div className='card-header text-center'>
+        <div className='card-header text-center bg-dark text-white'>
           <h1 className="p-0 m-0">CONTACTAME DISPONIBLE LA 24 HR</h1>
         </div>
         <div className="p-2">
