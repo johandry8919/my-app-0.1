@@ -4,6 +4,7 @@ import logo1 from '../assets/img/programador.gif';
 import logo2 from '../assets/img/programador2.gif';
 import logo3 from '../assets/img/programador 3.gif';
 import ReCAPTCHA from 'react-google-recaptcha';
+import Nav from '../component/layout/Nav';
 
 import '../component/header/Header.css'
 
@@ -82,6 +83,8 @@ function Home() {
 
   return (  
     <div className=' m-auto mt-4 Headers'>
+
+      <Nav/>
 
           <div id="alerta" className="alert alert-success d-none text-center" role="alert">
                 Mensaje enviado correctamente.
