@@ -83,9 +83,9 @@ function Home() {
   return (  
     <div className=' m-auto mt-4 Headers'>
 
-                <div id="alerta" class="alert alert-success d-none text-center" role="alert">
+          <div id="alerta" className="alert alert-success d-none text-center" role="alert">
                 Mensaje enviado correctamente.
-                </div>
+          </div>
       <section className='card container text-uppercase '>
         <div className='card-header text-center bg-dark text-white'>
           <h2 className="p-0 m-0">CONTACTAME DISPONIBLE LA 24 HR</h2>
@@ -94,7 +94,7 @@ function Home() {
           <div className="row justify-content-center">
           <div className="col-12 col-md-6">
             <img
-                className={`img-fluid animate__animated animate__backInLeft ${currentImage === 2 ? 'active' : ''} transition-img`}
+                className={`img-fluid animate__animated animate__backInLeft ${currentImage === currentImage ? 'active' : ''} transition-img`}
                 src={images[currentImage]}
                 alt="logo"
             />
@@ -104,25 +104,26 @@ function Home() {
 
 
 
-            <div class="mb-3">
-                    <label for="" class="form-label">Nombre</label>
+            <div className="mb-3">
+                    <label htmlFor="sdfsd" className="form-label">Nombre</label>
                     <input  required type="text"
                         value={nombre}
-                        onChange={e => setNombre(e.target.value)}  class="form-control" id="" placeholder="Escribe tu nombre"/>
+                        onChange={e => setNombre(e.target.value)}  className="form-control" id="" placeholder="Escribe tu nombre"/>
                     </div>
-                    <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Tu correo</label>
+                    <div className="mb-3">
+                    <label htmlFor="exampleFormControlInput1" className="form-label">Tu correo</label>
                     <input  required type="email"
                         value={correo}
-                        onChange={e => setCorreo(e.target.value)}  class="form-control" id="exampleFormControlInput1" placeholder="correo"/>
+                        onChange={e => setCorreo(e.target.value)}  className="form-control" id="exampleFormControlInput1" placeholder="correo"/>
                     </div>
 
                     
-                    <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Contactame</label>
+                    <div className="mb-3">
+                    <label htmlFor="exampleFormControlTextarea1" className="form-label">Contactame</label>
                     <textarea required value={mensaje}
-                    onChange={e => setMensaje(e.target.value)} class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    onChange={e => setMensaje(e.target.value)} className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                     </div>
+
 
                     <ReCAPTCHA
                     sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
@@ -130,7 +131,7 @@ function Home() {
                     className='recaptcha'
                     
       />
-                    <button className='btn btn-primary w-100' type="submit">Enviar</button>
+                    <button className='btn btn-primary w-100 mt-2' type="submit">Enviar</button>
 
              </form>
 

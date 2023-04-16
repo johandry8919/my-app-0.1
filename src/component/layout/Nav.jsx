@@ -16,13 +16,13 @@ function Nav(){
 
 <ul className="nav-ul">
     <li className="nav-li">
-            <NavLink exact to="/" activeClassName="active">
+            <NavLink exact to="/" >
             Inicio
           </NavLink>
     </li>
     <li className="nav-li">
            
-          <a activeClassName="active"  href="https://johandry8919.github.io/my-portafolio/"> Quien Soy</a>
+          <a  href="https://johandry8919.github.io/my-portafolio/"> Quien Soy</a>
     </li>
     
    
