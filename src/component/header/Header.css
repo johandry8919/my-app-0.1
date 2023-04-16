@@ -11,6 +11,29 @@
 
   }
 
+  #alerta {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: opacity 0.5s ease;
+    opacity: 0;
+  }
+
+  .transition-img {
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  .active {
+    opacity: 1;
+  }
+  
+  .col-12.col-md-6 img:not(.active) {
+    opacity: 0;
+  }
+  
+
 
 
 
