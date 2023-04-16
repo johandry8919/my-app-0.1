@@ -5,6 +5,8 @@ import logo2 from '../assets/img/programador2.gif';
 import logo3 from '../assets/img/programador 3.gif';
 import ReCAPTCHA from 'react-google-recaptcha';
 
+import '../component/header/Header.css'
+
 
 
 
@@ -84,9 +86,9 @@ function Home() {
                 <div id="alerta" class="alert alert-success d-none text-center" role="alert">
                 Mensaje enviado correctamente.
                 </div>
-      <section className='card container text-uppercase'>
+      <section className='card container text-uppercase '>
         <div className='card-header text-center bg-dark text-white'>
-          <h1 className="p-0 m-0">CONTACTAME DISPONIBLE LA 24 HR</h1>
+          <h2 className="p-0 m-0">CONTACTAME DISPONIBLE LA 24 HR</h2>
         </div>
         <div className="p-2">
           <div className="row justify-content-center">
@@ -97,8 +99,17 @@ function Home() {
                 alt="logo"
             />
             </div>
-            <div className="col-12 col-md-6 textareas animate__animated animate__bounce">
+            <div className="col-12 col-md-6 textareas animate__animated animate__bounce " >
             <form onSubmit={handleSubmit}>
+
+
+
+            <div class="mb-3">
+                    <label for="" class="form-label">Nombre</label>
+                    <input  required type="text"
+                        value={nombre}
+                        onChange={e => setNombre(e.target.value)}  class="form-control" id="" placeholder="Escribe tu nombre"/>
+                    </div>
                     <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Tu correo</label>
                     <input  required type="email"
@@ -106,12 +117,7 @@ function Home() {
                         onChange={e => setCorreo(e.target.value)}  class="form-control" id="exampleFormControlInput1" placeholder="correo"/>
                     </div>
 
-                    <div class="mb-3">
-                    <label for="" class="form-label">Nombre</label>
-                    <input  required type="text"
-                        value={nombre}
-                        onChange={e => setNombre(e.target.value)}  class="form-control" id="" placeholder="Escribe tu nombre"/>
-                    </div>
+                    
                     <div class="mb-3">
                     <label for="exampleFormControlTextarea1" class="form-label">Contactame</label>
                     <textarea required value={mensaje}
@@ -121,7 +127,8 @@ function Home() {
                     <ReCAPTCHA
                     sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
                     onChange={handleRecaptcha}
-                    className='text-center p-3 m-auto'
+                    className='recaptcha'
+                    
       />
                     <button className='btn btn-primary w-100' type="submit">Enviar</button>
 

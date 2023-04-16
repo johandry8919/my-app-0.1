@@ -20,9 +20,9 @@ function Footter() {
       
     return ( 
 
-        <div class="footer">
+        <div class="footer ">
 
-           <img className='img-fluid' src={anime} alt="img-fotter" />
+           <img className='img-fluid p-2' src={anime} alt="img-fotter" />
 
         
               

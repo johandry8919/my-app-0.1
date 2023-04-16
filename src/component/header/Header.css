@@ -3,11 +3,19 @@
    
     
   }
- .textareas{
-    background-image: url('../../assets/img/fond.png');
+
+  .textareas{
+    background-image: url('../../assets/img/fondo3.gif');
     color: aliceblue;
     font-size: 1em;
     padding: 10px;
+    background-size: auto;
+    background-repeat: no-repeat;
+    position: relative;
+
+ 
+ 
+    
 
   }
 
@@ -32,6 +40,43 @@
   .col-12.col-md-6 img:not(.active) {
     opacity: 0;
   }
+
+  section div .textareas form{
+    padding: 10px;
+    width: 64%;
+    background-color: rgba(0, 0, 0, 0.781);
+    position: absolute;
+    left: 14%;
+    right: 0;
+    top: 10;
+    padding:  25px;
+  }
+
+  @media screen and (width:375px) {
+    section div .textareas form{
+      padding: 10px;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.781);
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 10;
+      padding:  25px;
+    }
+
+    .textareas{
+     
+     background-image: none;
+  
+   
+   
+      
+  
+    }
+    
+  }
+
+
   
 
 
