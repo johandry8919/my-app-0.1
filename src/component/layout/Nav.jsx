@@ -20,10 +20,7 @@ function Nav(){
             Inicio
           </NavLink>
     </li>
-    <li className="nav-li">
-           
-          <a  href="https://johandry8919.github.io/my-portafolio/"> Quien Soy</a>
-    </li>
+
     
    
 </ul>
